@@ -14,7 +14,7 @@ class School(Model):
     town = fields.TextField()
     postCode = fields.TextField()
     post = fields.TextField()
-    # owner = fields.IntEnumField(OwnerType)
+    owner = fields.IntEnumField(OwnerType)
 
     def __str__(self):
         return self.name
