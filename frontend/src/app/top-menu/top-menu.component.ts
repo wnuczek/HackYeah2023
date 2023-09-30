@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuItem } from 'primeng/api';
+import { FilterService } from '../filter.service';
 
 @Component({
   selector: 'app-top-menu',
@@ -9,11 +10,16 @@ import { MenuItem } from 'primeng/api';
 export class TopMenuComponent implements OnInit {
   items: MenuItem[] | undefined;
 
+  constructor(private filterService: FilterService) {}
+
   ngOnInit() {
     this.items = [
       {
         label: 'Szukaj',
         icon: 'pi pi-fw pi-search',
+        command: () => {
+          this.handleSearch();
+        },
       },
       {
         label: 'Pobierz raport',
@@ -24,5 +30,10 @@ export class TopMenuComponent implements OnInit {
         icon: 'pi pi-fw pi-database',
       },
     ];
+  }
+
+  handleSearch() {
+    const filterData = this.filterService.getFilterData();
+    console.log(filterData);
   }
 }
