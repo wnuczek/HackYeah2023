@@ -18,7 +18,7 @@ export class TopMenuComponent implements OnInit {
         label: 'Szukaj',
         icon: 'pi pi-fw pi-search',
         command: () => {
-          this.handleSearch(); // Call handleSearch() when "Szukaj" is clicked
+          this.handleSearch();
         },
       },
       {
@@ -33,9 +33,7 @@ export class TopMenuComponent implements OnInit {
   }
 
   handleSearch() {
-    const filterData = this.filterService.getFilterData(); // Get filter data from FilterService
-    // Handle filterData as needed
+    const filterData = this.filterService.getFilterData();
     console.log(filterData);
-    // You can perform any action or call a service to perform a search using filterData.
   }
 }
