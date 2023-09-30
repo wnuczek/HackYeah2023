@@ -295,3 +295,7 @@ dist
 Thumbs.db
 
 data-prep-env
+
+better_api/KutnoAPI/.vs/
+better_api/KutnoAPI/KutnoAPI/bin
+better_api/KutnoAPI/KutnoAPI/obj
