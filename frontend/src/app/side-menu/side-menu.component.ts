@@ -9,5 +9,9 @@ export class SideMenuComponent {
   schoolTypes = [
     { name: 'Publiczna', code: 'NY' },
     { name: 'Prywatna', code: 'RM' },
+    { name: 'Publisasczna', code: 'asdNY' },
+    { name: 'Prywafdgdtna', code: 'fffRM' },
+    { name: 'Publiafsczna', code: 'ddddNY' },
+    { name: 'Prywaasfatna', code: 'sss' },
   ];
 }
