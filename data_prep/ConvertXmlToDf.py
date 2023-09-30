@@ -3,7 +3,7 @@ from lxml import etree
 import os
 
 
-def ConvertXmlToDf(fileName, sheetName):
+def ConvertXMLtoDF(fileName, sheetName):
     # Read the XML data from the file
     
     tree = etree.parse(fileName)
@@ -34,7 +34,7 @@ def ConvertXmlToDf(fileName, sheetName):
 
 def ConvertXMLToCSV(fileName, sheetName):
     # convert xml to pandas dataframe
-    df = ConvertXmlToDf(fileName, sheetName)
+    df = ConvertXMLtoDF(fileName, sheetName)
     outputFileName = fileName.replace('.xml', '.csv')
     print(f'Filename: {outputFileName}')
 
@@ -46,8 +46,8 @@ def ConvertXMLToCSV(fileName, sheetName):
     df.to_csv(outputFileName)
 
 
-fileName = os.path.join('..', 'docs', 'SIO 30.09.2022.xml')
-sheetName = 'Szkoły i placówki'
+# fileName = os.path.join('..', 'docs', 'SIO 30.09.2022.xml')
+# sheetName = 'Szkoły i placówki'
 
 
-ConvertXMLToCSV(fileName, sheetName)
+# ConvertXMLToCSV(fileName, sheetName)
