@@ -1,14 +1,20 @@
 <p-accordion [multiple]="true" class="p-0">
   <p-accordionTab header="Szkoła">
 		<div class="flex flex-column gap-2">
-			<p-multiSelect [style]="{'width':'100%'}" class="p-inputtext-sm block" [options]="schoolTypes" defaultLabel="Wybierz typ szkoły" optionLabel="name" display="chip"></p-multiSelect>
-			<p-multiSelect [style]="{'width':'100%'}" class="p-inputtext-sm block" [options]="schoolTypes" defaultLabel="Wybierz organ prowadzący" optionLabel="name" display="chip"></p-multiSelect>
+			<label htmlFor="typSzkoly">Typ szkoły</label>
+			<p-multiSelect id="typSzkoly" [style]="{'width':'100%'}" class="p-inputtext-sm block" [options]="schoolTypes" defaultLabel="Wybierz typ szkoły" optionLabel="name" display="chip"></p-multiSelect>
+			<label htmlFor="organProwadzacy">Typ szkoły</label>
+			<p-multiSelect id="organProwadzacy" [style]="{'width':'100%'}" class="p-inputtext-sm block" [options]="schoolTypes" defaultLabel="Wybierz organ prowadzący" optionLabel="name" display="chip"></p-multiSelect>
+			<label htmlFor="szkola">Typ szkoły</label>
+			<p-multiSelect id="szkola" [style]="{'width':'100%'}" class="p-inputtext-sm block" [options]="schoolTypes" defaultLabel="Wybierz szkołe" optionLabel="name" display="chip"></p-multiSelect>
 		</div>
   </p-accordionTab>
-  <p-accordionTab header="Uczeń">
+  <p-accordionTab header="Inne">
     <div class="flex flex-column gap-2">
-			<p-multiSelect [style]="{'width':'100%'}" class="p-inputtext-sm block w-11" [options]="schoolTypes" defaultLabel="Wybierz typ szkoły" optionLabel="name" display="chip"></p-multiSelect>
-			<p-multiSelect [style]="{'width':'100%'}" class="p-inputtext-sm block w-11" [options]="schoolTypes" defaultLabel="Wybierz organ prowadzący" optionLabel="name" display="chip"></p-multiSelect>
+			<label htmlFor="kategoriaUcznia">Kategoria uczniów</label>
+			<p-multiSelect id="kategoriaUcznia" [style]="{'width':'100%'}" class="p-inputtext-sm block w-12" [options]="schoolTypes" defaultLabel="Wybierz kat. ucznia" optionLabel="name" display="chip"></p-multiSelect>
+			<label htmlFor="rok">Rok</label>
+			<p-multiSelect id="rok" [style]="{'width':'100%'}" class="p-inputtext-sm block w-12" [options]="schoolTypes" defaultLabel="Wybierz rok" optionLabel="name" display="chip"></p-multiSelect>
 		</div>
   </p-accordionTab>
 </p-accordion>
