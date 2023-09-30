@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AccordionModule } from 'primeng/accordion';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RaportComponent } from './raport/raport.component';
 import { SideMenuComponent } from './side-menu/side-menu.component';
 import { TopMenuComponent } from './top-menu/top-menu.component';
 
+const primeng = [AccordionModule];
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +16,12 @@ import { TopMenuComponent } from './top-menu/top-menu.component';
     SideMenuComponent,
     RaportComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    ...primeng,
+  ],
   providers: [],
   bootstrap: [
     AppComponent,
