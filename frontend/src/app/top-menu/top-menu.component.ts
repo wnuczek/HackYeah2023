@@ -1,10 +1,24 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { MenuItem } from 'primeng/api';
 
 @Component({
   selector: 'app-top-menu',
   templateUrl: './top-menu.component.html',
-  styleUrls: ['./top-menu.component.sass']
+  styleUrls: ['./top-menu.component.sass'],
 })
-export class TopMenuComponent {
+export class TopMenuComponent implements OnInit {
+  items: MenuItem[] | undefined;
 
+  ngOnInit() {
+    this.items = [
+      {
+        label: 'New',
+        icon: 'pi pi-fw pi-plus',
+      },
+      {
+        label: 'Delete',
+        icon: 'pi pi-fw pi-trash',
+      },
+    ];
+  }
 }
