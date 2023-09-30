@@ -12,8 +12,8 @@ export class TopMenuComponent implements OnInit {
   ngOnInit() {
     this.items = [
       {
-        label: 'New',
-        icon: 'pi pi-fw pi-plus',
+        label: 'Szukaj',
+        icon: 'pi pi-fw pi-search',
       },
       {
         label: 'Delete',
