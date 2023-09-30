@@ -1,7 +1,12 @@
 import sys
 import os
-from ..models import school
-import XMLtoDFParser as xmlParser
+# parent_dir = os.path.dirname(os.path.realpath(__file__))
+# sys.path.insert(0, parent_dir)
+# from .models import school
+# import models.owner_type
+import models.school as school
+
+import parsers.XMLtoDFParser as xmlParser
 
 def Parse(bytes):
     #bytes = plik ze szkołami
@@ -15,7 +20,7 @@ def Parse(bytes):
     
     schools = []
     for index, row in df.iterrows():
-        school = school.School(
+        _school = school.School(
             rspo=row['Numer RSPO'],
             regon=row['REGON'],
             schoolType=row['Typ szkoły/placówki'],
@@ -27,7 +32,7 @@ def Parse(bytes):
             postCode=row['Kod pocztowy'],
             post=row['Poczta']
         )
-        schools.append(school)
+        schools.append(_school)
     
     return schools
 

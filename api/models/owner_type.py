@@ -1,6 +1,5 @@
 from enum import IntEnum
 
-
 class OwnerType(IntEnum):
     COMMUNE = 1
     RELIGION_ORGANISATION = 2

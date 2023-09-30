@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "YWZ1P5gwhIH/Z/QLAHf54fcso5G8sFsDfmADdUboAywiQpBKvSEP+txOPaKX4VLQ+B/umuJ3gdU3Uh8A+h5kUg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ANI\\source\\repos\\HackYeah\\better_api\\KutnoAPI\\KutnoAPI\\KutnoAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ANI\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\ANI\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\ANI\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\ANI\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\ANI\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\ANI\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

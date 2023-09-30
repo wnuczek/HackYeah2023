@@ -1,7 +1,7 @@
 from tortoise import fields, models
 from owner_type import OwnerType
 from tortoise.models import Model
-
+from teacher import Teacher
 
 class School(Model):
     rspo = fields.IntField(pk=True)
@@ -14,7 +14,7 @@ class School(Model):
     town = fields.TextField()
     postCode = fields.TextField()
     post = fields.TextField()
-    owner = fields.IntEnumField(OwnerType)
+    # owner = fields.IntEnumField(OwnerType)
 
     def __str__(self):
         return self.name
