@@ -290,3 +290,8 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+.DS_Store
+Thumbs.db
+
+data-prep-env
