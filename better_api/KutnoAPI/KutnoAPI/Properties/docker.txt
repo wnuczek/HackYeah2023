@@ -1,4 +1,4 @@
-dotnet build .\KutnoAPI\KutnoAPI.csproj -c release
-dotnet publish .\KutnoAPI\KutnoAPI.csproj -c release --no-restore -o "./Published"
+dotnet build .\KutnoAPI\KutnoAPI.csproj -c debug
+dotnet publish .\KutnoAPI\KutnoAPI.csproj -c debug --no-restore -o "./Published"
 docker build -t kutno-api .
 docker run -d -p 8080:80 --name kutno-api-container kutno-api
