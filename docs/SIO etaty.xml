@@ -1,0 +1,769 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Piotr Łaszewski</Author>
+  <LastAuthor>Piotr Łaszewski</LastAuthor>
+  <Created>2023-09-28T07:14:10Z</Created>
+  <Version>15.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>12435</WindowHeight>
+  <WindowWidth>28800</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss" ss:Size="11"
+    ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62">
+   <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss" ss:Size="11"
+    ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#92D050" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s63">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss" ss:Size="11"
+    ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#F2F2F2" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s64">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss" ss:Size="11"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s65">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss" ss:Size="11"
+    ss:Color="#000000"/>
+   <NumberFormat ss:Format="#\ ###\ ##0.00"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Arkusz1">
+  <Table ss:ExpandedColumnCount="34" ss:ExpandedRowCount="19" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="15">
+   <Column ss:Width="180" ss:Span="33"/>
+   <Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Wykaz etatów nauczycieli objętych subwencją oświatową wg stanu na 30IX/10X 2022 r., data wygenerowania raportu wg stanu na 2023-01-16</Data></Cell>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="45">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Numer RSPO</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Identyfikator typu szkoły / placówki</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Typ szkoły / placówki</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Nazwa szkoły / placówki</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Regon</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Etat - umowa</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Etat - godziny ponadwymiarowe</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Etat niesubwencyjny - formy zatrudnienia inne niż KN</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Etat niesubwencyjny - nieobecności</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Etat subwencyjny - ogółem</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Etat subwencyjny - bez stopnia awansu</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Etat subwencyjny - mianowany</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Etat subwencyjny - dyplomowany</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Etat niesubwencyjny - ogółem</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Typ organu rejestrującego</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Organ rejestrujący</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Część miejska</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Typ organu prowadzącego</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Organ prowadzący</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Wojewodztwo</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Powiat</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Gmina</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Typ gminy</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Miejscowość</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Ulica</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Nr domu</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Nr lokalu</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Kod pocztowy</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Poczta</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Telefon</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">e-Mail</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Specyfika szkoły</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Kategoria uczniów</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Publiczność</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">29129</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Przedszkole</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">PRZEDSZKOLE MIEJSKIE NR 17 W KUTNIE &quot;NIEZAPOMINAJKA&quot;</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">610024853</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">29.07</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2.93</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8.69</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2.91</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2.37</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3.41</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">20.38</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Gmina</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">MIASTO KUTNO</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Gmina</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">MIASTO KUTNO</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ŁÓDZKIE</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">kutnowski</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">M</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ul. Józefa Wybickiego</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">1</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">99-300</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">242535414</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">pmnr17@edu.kutno.pl</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">brak specyfiki</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Dzieci lub młodzież</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">publiczna</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">29454</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Przedszkole</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">PRZEDSZKOLE MIEJSKIE NR 16 &quot;CALINECZKA&quot; W KUTNIE</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">610024847</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">18.79</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0.73</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">5.46</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2.1800000000000002</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0.06</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3.22</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">13.33</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Gmina</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">MIASTO KUTNO</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Gmina</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">MIASTO KUTNO</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ŁÓDZKIE</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">kutnowski</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">M</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ul. Wilcza</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">5</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">99-300</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">242540816</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">pm16@edu.kutno.pl</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">brak specyfiki</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Dzieci lub młodzież</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">publiczna</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">30989</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Przedszkole</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">PRZEDSZKOLE MIEJSKIE NR 15 &quot;BAJKA&quot;</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">610024830</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">21.64</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1.31</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">7.58</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2.1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2.98</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">14.06</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Gmina</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">MIASTO KUTNO</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Gmina</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">MIASTO KUTNO</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ŁÓDZKIE</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">kutnowski</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">M</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ul. Władysława Jagiełły</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">4a</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">99-300</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">242536110</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">pm15@edu.kutno.pl</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">brak specyfiki</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Dzieci lub młodzież</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">publiczna</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">31184</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Przedszkole</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">PRZEDSZKOLE MIEJSKIE NR 5 &quot;STOKROTKA&quot;</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">610169994</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">10.47</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0.08</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2.21</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0.77</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0.53</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0.91</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8.26</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Gmina</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">MIASTO KUTNO</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Gmina</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">MIASTO KUTNO</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ŁÓDZKIE</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">kutnowski</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">M</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ul. Barcewicza</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">13</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">99-300</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">242547762</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">pm5@edu.kutno.pl</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">brak specyfiki</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Dzieci lub młodzież</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">publiczna</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">31284</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Przedszkole</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">PRZEDSZKOLE MIEJSKIE NR 8 &quot;PROMYCZEK&quot;</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">610024818</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">14.71</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0.78</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">4.42</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0.49</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1.23</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2.7</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">10.29</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Gmina</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">MIASTO KUTNO</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Gmina</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">MIASTO KUTNO</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ŁÓDZKIE</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">kutnowski</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">M</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ul. dr. Antoniego Troczewskiego</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">2a</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">99-300</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">242537992</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">pm8@edu.kutno.pl</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">brak specyfiki</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Dzieci lub młodzież</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">publiczna</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">31427</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Przedszkole</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">INTEGRACYJNE PRZEDSZKOLE MIEJSKIE NR 3 W KUTNIE &quot;JARZĘBINKA&quot;</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">610024764</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">28.09</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3.1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">9.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">4.3099999999999996</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1.75</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3.44</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">18.59</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Gmina</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">MIASTO KUTNO</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Gmina</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">MIASTO KUTNO</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ŁÓDZKIE</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">kutnowski</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">M</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ul. Generała Bema</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">15</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">99-300</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">242547943</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ipm3@edu.kutno.pl</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">brak specyfiki</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Dzieci lub młodzież</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">publiczna</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">31717</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Szkoła podstawowa</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">SZKOŁA PODSTAWOWA NR 5 IM. HENRYKA SIENKIEWICZA</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">000903297</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">29.91</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">4.3099999999999996</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">29.91</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">6.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8.61</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">14.8</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Gmina</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">MIASTO KUTNO</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Gmina</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">MIASTO KUTNO</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ŁÓDZKIE</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">kutnowski</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">M</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ul. Konduktorska</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">13</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">99-300</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">242533072</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">sp5@edu.kutno.pl</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">brak specyfiki</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Dzieci lub młodzież</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">publiczna</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">31727</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Szkoła podstawowa</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">SZKOŁA PODSTAWOWA NR 6 IM. MARII SKŁODOWSKIEJ - CURIE W KUTNIE</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">000903280</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">43.97</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">7.29</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">43.97</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">4.6100000000000003</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">17.87</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">21.49</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Gmina</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">MIASTO KUTNO</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Gmina</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">MIASTO KUTNO</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ŁÓDZKIE</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">kutnowski</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">M</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ul. Łąkoszyńska</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">9</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">99-300</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">242533911</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">sp6@edu.kutno.pl</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">brak specyfiki</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Dzieci lub młodzież</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">publiczna</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">31729</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Szkoła podstawowa</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">SZKOŁA PODSTAWOWA NR 4 IM. MIKOŁAJA KOPERNIKA W KUTNIE</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">000903305</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">25.43</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">4.9400000000000004</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">25.43</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1.95</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8.7799999999999994</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">14.7</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Gmina</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">MIASTO KUTNO</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Gmina</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">MIASTO KUTNO</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ŁÓDZKIE</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">kutnowski</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">M</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ul. Narutowicza</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">22</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">99-300</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">242533967</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">sp4@edu.kutno.pl</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">brak specyfiki</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Dzieci lub młodzież</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">publiczna</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">34265</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Szkoła podstawowa</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">SZKOŁA PODSTAWOWA NR 9 IM.WŁ.JAGIEŁŁY W KUTNIE</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">001070630</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">66.709999999999994</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">16.920000000000002</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">64.709999999999994</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8.56</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8.5500000000000007</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">47.6</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Gmina</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">MIASTO KUTNO</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Gmina</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">MIASTO KUTNO</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ŁÓDZKIE</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">kutnowski</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">M</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ul. Władysława Jagiełły</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">6</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">99-301</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">242536368</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">sp9@edu.kutno.pl</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">brak specyfiki</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Dzieci lub młodzież</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">publiczna</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">34266</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Szkoła podstawowa</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">SZKOŁA PODSTAWOWA NR 1 IM.TADEUSZA KOŚCIUSZKI W KUTNIE</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">000903334</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">92.66</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">14.91</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">87.66</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">25.33</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">52.33</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Gmina</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">MIASTO KUTNO</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Gmina</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">MIASTO KUTNO</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ŁÓDZKIE</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">kutnowski</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">M</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ul. Kanclerza Andrzeja Zamoyskiego</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">1</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">99-300</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">242547072</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">sp1kutno@poczta.onet.pl</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">brak specyfiki</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Dzieci lub młodzież</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">publiczna</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">128307</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">81</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Punkt przedszkolny</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">PUNKT PRZEDSZKOLNY NR 1 W KUTNIE</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">362231271</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2.3199999999999998</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2.5299999999999998</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0.09</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1.35</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1.0900000000000001</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">-0.21</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Gmina</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">MIASTO KUTNO</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Gmina</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">MIASTO KUTNO</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ŁÓDZKIE</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">kutnowski</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">M</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ul. Narutowicza</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">22</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">99-300</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">242533967</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">pp1@edu.kutno.pl</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">brak specyfiki</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Dzieci lub młodzież</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">publiczna</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">128308</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">81</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Punkt przedszkolny</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">PUNKT PRZEDSZKOLNY NR 2 W KUTNIE</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">362231288</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2.41</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0.08</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2.39</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0.25</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1.0900000000000001</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1.05</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0.02</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Gmina</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">MIASTO KUTNO</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Gmina</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">MIASTO KUTNO</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ŁÓDZKIE</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">kutnowski</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">M</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ul. Łąkoszyńska</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">9</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">99-300</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">242533911</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">spnr_6@gazeta.pl</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">brak specyfiki</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Dzieci lub młodzież</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">publiczna</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">128310</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">81</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Punkt przedszkolny</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">PUNKT PRZEDSZKOLNY NR 3 W KUTNIE</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">362231294</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1.86</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1.42</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0.11</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1.25</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0.06</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0.44</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Gmina</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">MIASTO KUTNO</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Gmina</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">MIASTO KUTNO</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ŁÓDZKIE</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">kutnowski</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">M</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ul. Konduktorska</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">13</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">99-300</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">242533072</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">sp5kutno@wp.pl</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">brak specyfiki</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Dzieci lub młodzież</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">publiczna</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">263961</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Szkoła podstawowa</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">SZKOŁA PODSTAWOWA NR 2 IM. MARSZAŁKA JÓZEFA PIŁSUDSKIEGO</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">368245067</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">30.51</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3.43</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">30.51</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3.83</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">21.68</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Gmina</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">MIASTO KUTNO</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Gmina</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">MIASTO KUTNO</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ŁÓDZKIE</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">kutnowski</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">M</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ul. Staszica</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">6</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">99-300</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">243551577</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">sp2kutno@tlen.pl</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">brak specyfiki</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Dzieci lub młodzież</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">publiczna</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">263969</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Szkoła podstawowa</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">SZKOŁA PODSTAWOWA NR 7 IM. ADAMA MICKIEWICZA</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">368246055</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">32.17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">32.17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8.9499999999999993</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">19.22</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Gmina</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">MIASTO KUTNO</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Gmina</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">MIASTO KUTNO</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ŁÓDZKIE</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">kutnowski</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">M</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ul. dr. Antoniego Troczewskiego</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">2</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">99-300</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Kutno</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">243554461</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">sp7kutno@onet.pl</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">brak specyfiki</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Dzieci lub młodzież</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">publiczna</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Selected/>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>
