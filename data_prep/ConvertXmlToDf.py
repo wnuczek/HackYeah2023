@@ -1,6 +1,35 @@
 import pandas as pd
 from lxml import etree
+import xml.etree.ElementTree as ET
 import os
+
+def ConvertSprawozdanie():
+    # Parse the XML data
+    filePath = os.path.join('..', 'docs', 'Sprawozdania[2022][IVKwartał] Dochody.xml')
+    tree = ET.parse(filePath)
+    root = tree.getroot()
+
+    # Define the namespace mapping if necessary
+    namespace_mapping = {
+        'ns': 'urn:schemas-microsoft-com:office:spreadsheet',
+    }
+
+    # Initialize lists to store extracted data
+    rows = []
+
+    # Iterate through the <Pozycje> elements
+    for pozycje_elem in root.findall('.//Pozycje'):
+        pozycje_data = {}
+        for pozycja_elem in pozycje_elem.findall('./Pozycja'):
+            pozycja_data = {}
+            for child_elem in pozycja_elem:
+                pozycja_data[child_elem.tag] = child_elem.text.strip()
+            pozycje_data.update(pozycja_data)
+        rows.append(pozycje_data)
+
+    # Create a DataFrame from the extracted data
+    df = pd.DataFrame(rows)
+
 
 
 def ConvertXMLtoDF(fileName, sheetName):
