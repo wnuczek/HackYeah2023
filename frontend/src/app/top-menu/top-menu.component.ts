@@ -16,8 +16,12 @@ export class TopMenuComponent implements OnInit {
         icon: 'pi pi-fw pi-search',
       },
       {
-        label: 'Delete',
-        icon: 'pi pi-fw pi-trash',
+        label: 'Pobierz raport',
+        icon: 'pi pi-fw pi-download',
+      },
+      {
+        label: 'Załaduj dane',
+        icon: 'pi pi-fw pi-database',
       },
     ];
   }
