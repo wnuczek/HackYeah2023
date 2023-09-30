@@ -1,23 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PGJ\\PycharmProjects\\HackYeah2023\\better_api\\KutnoAPI\\KutnoAPI\\KutnoAPI.csproj": {}
+    "C:\\Users\\ANI\\source\\repos\\HackYeah\\better_api\\KutnoAPI\\KutnoAPI\\KutnoAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PGJ\\PycharmProjects\\HackYeah2023\\better_api\\KutnoAPI\\KutnoAPI\\KutnoAPI.csproj": {
+    "C:\\Users\\ANI\\source\\repos\\HackYeah\\better_api\\KutnoAPI\\KutnoAPI\\KutnoAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PGJ\\PycharmProjects\\HackYeah2023\\better_api\\KutnoAPI\\KutnoAPI\\KutnoAPI.csproj",
+        "projectUniqueName": "C:\\Users\\ANI\\source\\repos\\HackYeah\\better_api\\KutnoAPI\\KutnoAPI\\KutnoAPI.csproj",
         "projectName": "KutnoAPI",
-        "projectPath": "C:\\Users\\PGJ\\PycharmProjects\\HackYeah2023\\better_api\\KutnoAPI\\KutnoAPI\\KutnoAPI.csproj",
-        "packagesPath": "C:\\Users\\PGJ\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PGJ\\PycharmProjects\\HackYeah2023\\better_api\\KutnoAPI\\KutnoAPI\\obj\\",
+        "projectPath": "C:\\Users\\ANI\\source\\repos\\HackYeah\\better_api\\KutnoAPI\\KutnoAPI\\KutnoAPI.csproj",
+        "packagesPath": "C:\\Users\\ANI\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ANI\\source\\repos\\HackYeah\\better_api\\KutnoAPI\\KutnoAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages",
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\PGJ\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ANI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -27,7 +29,7 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "\\\\kratos\\DFK\\ANI\\NugetPackages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -78,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
