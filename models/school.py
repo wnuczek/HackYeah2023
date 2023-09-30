@@ -1,5 +1,7 @@
-from tortoise.contrib.postgres import fields
+from tortoise import fields, models
+from owner_type import OwnerType
 from tortoise.models import Model
+
 
 class School(Model):
     rspo = fields.IntField(pk=True)
@@ -8,11 +10,11 @@ class School(Model):
     name = fields.TextField()
     address = fields.TextField()
     buildingNumber = fields.TextField()
-    flaNumber = fields.TextField()
+    flatNumber = fields.TextField()
     town = fields.TextField()
     postCode = fields.TextField()
     post = fields.TextField()
-    
+    owner = fields.IntEnumField(OwnerType)
 
     def __str__(self):
         return self.name

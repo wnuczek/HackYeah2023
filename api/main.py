@@ -17,7 +17,7 @@ def read_root():
 register_tortoise(
     app,
     db_url="postgres://api:hackyeahapi@146.59.35.43:5432/postgres",
-    modules={"models": ["models"]},
+    modules={"models": ["../models"]},
     generate_schemas=False,
     add_exception_handlers=True,
 )
