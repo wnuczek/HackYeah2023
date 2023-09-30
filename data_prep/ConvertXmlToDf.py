@@ -32,22 +32,47 @@ def ConvertXMLtoDF(fileName, sheetName):
     return df
 
 
-def ConvertXMLToCSV(fileName, sheetName):
+def ConvertXMLToCSV(fileName, sheetName, headerRow):
     # convert xml to pandas dataframe
     df = ConvertXMLtoDF(fileName, sheetName)
-    outputFileName = fileName.replace('.xml', '.csv')
+    outputFileName = os.path.split(fileName)[-1].replace('.xml', f'_{sheetName}.csv')
     print(f'Filename: {outputFileName}')
 
-		# cut header rows
-    df.columns = df.iloc[5]
-    df = df[6:]
+    # cut header rows
+    df.columns = df.iloc[headerRow]
+    df = df[headerRow+1:]
 
-		# save dataframe as csv
-    df.to_csv(outputFileName)
-
-
-# fileName = os.path.join('..', 'docs', 'SIO 30.09.2022.xml')
-# sheetName = 'Szkoły i placówki'
+    # save dataframe as csv
+    outputFilePath = os.path.join('output', outputFileName)
+    df.to_csv(outputFilePath)
 
 
-# ConvertXMLToCSV(fileName, sheetName)
+fileName = os.path.join('..', 'docs', 'SIO 30.09.2022.xml')
+sheetName = 'Szkoły i placówki'
+headerRow = 5
+ConvertXMLToCSV(fileName, sheetName, headerRow)
+
+fileName = os.path.join('..', 'docs', 'SIO 30.09.2022.xml')
+sheetName = 'Nauczyciele'
+headerRow = 5
+ConvertXMLToCSV(fileName, sheetName, headerRow)
+
+fileName = os.path.join('..', 'docs', 'SIO 30.09.2021.xml')
+sheetName = 'Szkoły i placówki'
+headerRow = 5
+ConvertXMLToCSV(fileName, sheetName, headerRow)
+
+fileName = os.path.join('..', 'docs', 'SIO 30.09.2021.xml')
+sheetName = 'Nauczyciele'
+headerRow = 5
+ConvertXMLToCSV(fileName, sheetName, headerRow)
+
+fileName = os.path.join('..', 'docs', 'SIO etaty.xml')
+sheetName = 'Arkusz1'
+headerRow = 2
+ConvertXMLToCSV(fileName, sheetName, headerRow)
+
+fileName = os.path.join('..', 'docs', 'SIO uczniowie.xml')
+sheetName = 'Arkusz1'
+headerRow = 2
+ConvertXMLToCSV(fileName, sheetName, headerRow)
