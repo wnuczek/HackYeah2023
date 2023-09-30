@@ -1,1 +1,0 @@
-#tu będzie zajebisty parser
