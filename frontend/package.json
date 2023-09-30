@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "@angular/cli": "^16.2.4",
-    "chart.js": "^4.4.0",
-    "primeng": "^16.4.1"
-  }
-}
