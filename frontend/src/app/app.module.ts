@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { RaportComponent } from './raport/raport.component';
 import { SideMenuComponent } from './side-menu/side-menu.component';
 import { TopMenuComponent } from './top-menu/top-menu.component';
+import { MenubarModule } from 'primeng/menubar';
 
 const primeng = [AccordionModule];
 @NgModule({
@@ -20,6 +21,7 @@ const primeng = [AccordionModule];
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    MenubarModule,
     ...primeng,
   ],
   providers: [],
