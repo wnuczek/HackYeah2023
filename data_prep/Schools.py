@@ -5,13 +5,9 @@ import pandas as pd
 # Disable SSL certificate verification warning (not recommended for production)
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
-url = "http://localhost:5286/Schools/SendBytes"
+url = "http://localhost:5286/Schools"
 
 payload = """{
-  "offset": 0,
-  "limit": 100,
-  "conditions": [
-  ]
 }"""
 headers = {}
 

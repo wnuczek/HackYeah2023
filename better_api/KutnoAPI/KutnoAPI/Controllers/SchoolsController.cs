@@ -67,8 +67,8 @@ namespace KutnoAPI.Controllers
                 return BadRequest(ex.Message);
 			}
 		}
-		[HttpGet(Name = "GetSchools")]
-        public async Task<ActionResult<IEnumerable<School>>> getMaterials(long UserId, string UserLang, SearchRequest searchRequest)
+		[HttpPost(Name = "GetSchools")]
+        public async Task<ActionResult<IEnumerable<School>>> getMaterials(SearchRequest searchRequest)
         {
 
             var query = string.Empty;
