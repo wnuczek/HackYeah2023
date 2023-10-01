@@ -9,8 +9,11 @@ url = "http://localhost:5286/Schools"
 
 payload = """{
 }"""
-headers = {}
+headers = {
+  'Content-Type': 'application/json'
+}
 
 response = requests.request("POST", url, headers=headers, data=payload)
+
 df = pd.read_json(response.text)
 print(df)

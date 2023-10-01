@@ -74,7 +74,7 @@ namespace KutnoAPI.Controllers
 			}
 		}
 		[HttpPost(Name = "GetSchools")]
-        public async Task<ActionResult<IEnumerable<School>>> getSchools(long UserId, string UserLang, SearchRequest searchRequest)
+        public async Task<ActionResult<IEnumerable<School>>> getSchools(SearchRequest searchRequest)
         {
 
             var query = string.Empty;
