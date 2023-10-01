@@ -69,7 +69,18 @@ namespace KutnoAPI.Controllers
 				var incomes = parser.Parse(request.IncomeSummary, false);
 				var costs = parser.Parse(request.CostsSummary, true);
 
-				return Ok();
+				foreach(var income in incomes)
+				{
+					income.Year = request.Year;
+				}
+				foreach (var cost in costs)
+				{
+					cost.Year = request.Year;
+				}
+				var unionResult = incomes.Union(costs).ToList();
+
+
+				return Ok(unionResult);
 			}
 			catch (Exception ex)
 			{
