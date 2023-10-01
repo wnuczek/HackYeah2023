@@ -1,7 +1,7 @@
 import pandas as pd
 from lxml import etree
 import os
-from ConvertXmlToDf import ConvertXMLtoDF
+from Convert import ConvertExcelXmlToDf
 
 def SIO():
     fileName = os.path.join('..', 'docs', 'SIO 30.09.2022.xml')
@@ -22,7 +22,7 @@ def Schools(fileName):
     # Define the worksheet name
     sheetName = 'Szkoły i placówki'  
 
-    df = ConvertXMLtoDF(fileName, sheetName)
+    df = ConvertExcelXmlToDf(fileName, sheetName)
 
     df.columns = df.iloc[5]
     df = df[6:]
@@ -33,7 +33,7 @@ def Teachers(fileName):
     # Define the worksheet name
     sheetName = 'Nauczyciele'  
 
-    df = ConvertXMLtoDF(fileName, sheetName)
+    df = ConvertExcelXmlToDf(fileName, sheetName)
     
     df.columns = df.iloc[5]
     df = df[6:]
