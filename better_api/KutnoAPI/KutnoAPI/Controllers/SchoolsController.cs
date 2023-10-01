@@ -32,19 +32,17 @@ namespace KutnoAPI.Controllers
         {
             try
             {
-				string fileName = "C:\\Users\\PGJ\\PycharmProjects\\HackYeah2023\\docs\\SIO 30.09.2022.xml";
-                string fileNameEtaty = "C:\\Users\\PGJ\\PycharmProjects\\HackYeah2023\\docs\\SIO etaty.xml";
+				//string fileName = "C:\\Users\\PGJ\\PycharmProjects\\HackYeah2023\\docs\\SIO 30.09.2022.xml";
+				string fileName = Path.Combine("..","..","..","docs", "SIO 30.09.2022.xml");
+				string fileNameJobs = Path.Combine("..","..","..","docs", "SIO etaty.xml");
+				byte[] fileBytes = System.IO.File.ReadAllBytes(fileName);
+				byte[] fileBytesJobs = System.IO.File.ReadAllBytes(fileNameJobs);
 
-                byte[] fileBytes = System.IO.File.ReadAllBytes(fileName);
-                byte[] fileBytes_id = System.IO.File.ReadAllBytes(fileNameEtaty);
-
-
-
-                SchoolUploadRequest schoolUploadRequest = new()
+				SchoolUploadRequest schoolUploadRequest = new()
                 {
                     Year = 2022,
                     SchoolsWorksheet = fileBytes,
-                    JobsWorksheet = fileBytes
+                    JobsWorksheet = fileBytesJobs
                 };
 
                 HttpClient client = new()
