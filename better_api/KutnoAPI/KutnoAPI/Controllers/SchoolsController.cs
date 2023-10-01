@@ -2,6 +2,7 @@ using Dapper;
 using KutnoAPI.Extensions;
 using KutnoAPI.Models;
 using KutnoAPI.Parsers;
+using KutnoAPI.Services;
 using MesInternalApi.Extensions;
 using Microsoft.AspNetCore.Mvc;
 using Npgsql;
@@ -13,7 +14,7 @@ namespace KutnoAPI.Controllers
 	public class SchoolsController : ControllerBase
 	{
 		private string _connectionString = string.Empty;
-		private string SCHOOLS_BASE_QUERY = "SELECT * FROM g.schools";
+		private string SCHOOLS_BASE_QUERY = "SELECT * FROM pgj.schools";
 
         private const int RECORD_DEFAULT_LIMIT = 100;
 
@@ -30,7 +31,7 @@ namespace KutnoAPI.Controllers
         {
             try
             {
-				string fileName = "C:\\Users\\ANI\\source\\repos\\HackYeah\\docs\\SIO 30.09.2022.xml";
+				string fileName = "C:\\Users\\PGJ\\PycharmProjects\\HackYeah2023\\docs\\SIO 30.09.2022.xml";
 				byte[] fileBytes = System.IO.File.ReadAllBytes(fileName);
 
                 SchoolUploadRequest schoolUploadRequest = new()
@@ -60,15 +61,20 @@ namespace KutnoAPI.Controllers
 			{
 				SchoolParser schoolParser = new ();
 				var r = schoolParser.Parse(schoolUploadRequest);
-                return Ok(r);
+                SchoolService service = new();
+                using (var connection = new NpgsqlConnection(_connectionString))
+                {
+                    service.InsertSchoolData(r, connection);
+                }
+                return Ok();
 			}
 			catch (Exception ex)
 			{
                 return BadRequest(ex.Message);
 			}
 		}
-		[HttpGet(Name = "GetSchools")]
-        public async Task<ActionResult<IEnumerable<School>>> getMaterials(long UserId, string UserLang, SearchRequest searchRequest)
+		[HttpPost(Name = "GetSchools")]
+        public async Task<ActionResult<IEnumerable<School>>> getSchools(long UserId, string UserLang, SearchRequest searchRequest)
         {
 
             var query = string.Empty;

@@ -11,7 +11,7 @@ public class School
     public string Regon { get; set; }
 
     [JsonPropertyName("schooltype")]
-    public string SchoolType { get; set; }
+    public SchoolType SchoolType { get; set; }
 
     [JsonPropertyName("name")]
     public string Name { get; set; }
@@ -35,8 +35,10 @@ public class School
     public string Post { get; set; }
 
     [JsonPropertyName("owner")]
-    public OwnerType Owner { get; set; }
+    public OwnerType OwnerType { get; set; }
     public List<CategoryValues> Categories { get; set; }
+
     public SchoolSummary Summary { get; set; }
+
 }
 

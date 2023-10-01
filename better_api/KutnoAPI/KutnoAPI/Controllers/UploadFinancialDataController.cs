@@ -11,22 +11,22 @@ namespace KutnoAPI.Controllers
 {
 	[ApiController]
 	[Route("[controller]")]
-	public class UploadSchoolDataController : ControllerBase
+	public class UploadFinancialDataController : ControllerBase
 	{
 		private string _connectionString = string.Empty;
 		private string SCHOOLS_BASE_QUERY = "SELECT * FROM g.schools";
 
         private const int RECORD_DEFAULT_LIMIT = 100;
 
-        private readonly ILogger<UploadSchoolDataController> _logger;
+        private readonly ILogger<UploadFinancialDataController> _logger;
 
-		public UploadSchoolDataController(ILogger<UploadSchoolDataController> logger, IConfiguration configuration)
+		public UploadFinancialDataController(ILogger<UploadFinancialDataController> logger, IConfiguration configuration)
 		{
 			_connectionString = configuration["DbString"];
 			_logger = logger;
 		}
 
-		[HttpGet(Name = "UploadSchools")]
+		[HttpGet(Name = "UploadFinancial")]
         private async Task<ActionResult<bool>> Upload([FromBody] SchoolUploadRequest searchRequest)
         {
 			return true;
