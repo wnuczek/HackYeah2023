@@ -1,17 +1,24 @@
 ﻿using KutnoAPI.Models;
 using System.Data;
+using System.Globalization;
+using System.Text;
 using System.Text.RegularExpressions;
-using System.Xml;
 using System.Xml.Linq;
 
 namespace KutnoAPI.Parsers;
 
 public class XMLParser
 {
-	public List<School> ParseXmlToDataTable(string fileName, string sheetName)
+	public List<School> ParseXmlToDataTable(string sheetName, byte[] schoolsWorksheet)
 	{
+		// Convert the byte array to a string
+		string xmlString = Encoding.UTF8.GetString(schoolsWorksheet);
+
+		// Parse the string into an XDocument
+		XDocument xmlDoc = XDocument.Parse(xmlString);
+
 		// Load the XML data from the file
-		XDocument xmlDoc = XDocument.Load(fileName);
+		//XDocument xmlDoc = XDocument.Load(fileName);
 
 		// Define the namespace mapping
 		XNamespace ss = "urn:schemas-microsoft-com:office:spreadsheet";
@@ -21,36 +28,26 @@ public class XMLParser
 		// Construct an XPath expression to select the rows from the specified worksheet
 		string xpathExpression = $"//ss:Worksheet[@ss:Name='{sheetName}']//ss:Row";
 
-		// Extract the data for the specified worksheet
-		DataTable dataTable = new();
-		for (int i = 0; i < 150; i++)
-		{
-			dataTable.Columns.Add();
-		}
-		bool columnsAdded = false;
 
 		// Use LINQ to XML with namespaces
 		var row = xmlDoc.Descendants(ss + "Worksheet")
 			.Where(ws => (string)ws.Attribute(ss + "Name") == sheetName)
 			.Descendants(ss + "Row")
 			.Skip(5).Take(1);
-		List<string> categories = new();
+		Dictionary< int, string> categories = new();
 		var cells = row.Elements(ss + "Cell");
-		foreach (var cell in cells)
+		for (int i = 0; i < cells.Count(); i++)
 		{
+			var cell = cells.ElementAt(i);
 			var trimmed = cell.Value.Trim();
 			if (trimmed.StartsWith('P') && Regex.IsMatch(trimmed, @"\d"))
 			{
-				categories.Add(trimmed);
+				categories.Add(i, trimmed);
 			}
 			
 		}
 
-
-
-		string breakpoint = "";
-
-		var rows = xmlDoc.Descendants(ss + "Worksheet")
+		var schools = xmlDoc.Descendants(ss + "Worksheet")
 			.Where(ws => (string)ws.Attribute(ss + "Name") == sheetName)
 			.Descendants(ss + "Row")
 			.Skip(6)
@@ -70,54 +67,52 @@ public class XMLParser
 					s.Town = value.ElementAtOrDefault(19).Value.ToString().Trim();
 					s.PostCode = value.ElementAtOrDefault(23).Value.ToString().Trim();
 					s.Post = value.ElementAtOrDefault(24).Value.ToString().Trim();
-					s.Categories = new List<CategoryDefinition>();
+					s.Summary = new();
 
-					//foreach (var element in value.Elements())
-					//{
-					//	if (value.elem)
-					//	CategoryDefinition cat = new();
-					//	cat.
-					//}
+					s.Summary.SchoolRSPO = s.Rspo;
+					var test2 = value.ElementAt(33);
+					CultureInfo culture = CultureInfo.InvariantCulture; 
+
+
+					s.Summary.StudentsQuantity = decimal.Parse(value.ElementAtOrDefault(33).Value.ToString().Trim(), culture);
+
+					s.Summary.StudentsFromCountryQuantity = decimal.Parse(value.ElementAtOrDefault(34).Value.ToString().Trim(), culture);
+					s.Summary.StudentsFromSmallTownQuantity = decimal.Parse(value.ElementAtOrDefault(35).Value.ToString().Trim(), culture);
+					s.Summary.StudentsOutsideSchool = decimal.Parse(value.ElementAtOrDefault(36).Value.ToString().Trim(), culture);		
+					s.Categories = new ();
+
+					foreach(var index in categories.Keys)
+					{
+						CategoryValues cat = new();
+						var test = value.ElementAtOrDefault(index).Value.Trim();
+						bool isParsed = decimal.TryParse(test, out decimal parsedValue);
+						cat.Value =  isParsed ? parsedValue : 0;
+						cat.SchoolRSPO = s.Rspo;
+						cat.CategoryStr = categories[index];
+						s.Categories.Add(cat);
+					}
+
 				}
 				return s;
 			})
 			.Where(x => !string.IsNullOrEmpty(x.Regon))
 			.ToList();
 
-		//// Now you can work with the selected rows
-		//foreach (var row in rows)
-		//{
-		//	DataRow dataRow = dataTable.NewRow();
-		//	// Process each row as needed
-		//	var cells = row.Elements(ss + ss+"Cell");
-		//	var count = cells.Count();
-		//	int columnIndex = 0;
-		//	foreach (var cell in cells)
-		//	{
-		//		var data = cell.Element(ss + "Data");
-		//		if (columnIndex < 150)
-		//		{
-		//			//string cellValue = (string)data;
-		//			dataRow[columnIndex] = cell.Value.ToString().Trim();
-		//			columnIndex++;
-		//		} 
-		//	}
-		//	dataTable.Rows.Add(dataRow);
-		//}
+		var test = schools.Where(x => x.Summary.StudentsQuantity > 0).ToList();
 
-		return rows;
+		return schools;
 	}
 
-	static XmlNamespaceManager XmlNamespaceManager(XDocument xmlDoc, XNamespace ss, XNamespace excel, XNamespace html)
-	{
-		XmlNamespaceManager nsManager = new XmlNamespaceManager(new NameTable());
+	//static XmlNamespaceManager XmlNamespaceManager(XDocument xmlDoc, XNamespace ss, XNamespace excel, XNamespace html)
+	//{
+	//	XmlNamespaceManager nsManager = new XmlNamespaceManager(new NameTable());
 
-		nsManager.AddNamespace("ss", ss.NamespaceName);
-		nsManager.AddNamespace("excel", excel.NamespaceName);
-		nsManager.AddNamespace("html", html.NamespaceName);
+	//	nsManager.AddNamespace("ss", ss.NamespaceName);
+	//	nsManager.AddNamespace("excel", excel.NamespaceName);
+	//	nsManager.AddNamespace("html", html.NamespaceName);
 
-		return nsManager;
-	}
+	//	return nsManager;
+	//}
 
 }
 

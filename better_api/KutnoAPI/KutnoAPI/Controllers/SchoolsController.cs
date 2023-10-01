@@ -1,11 +1,10 @@
-using Microsoft.AspNetCore.Mvc;
-
 using Dapper;
-using Npgsql;
-using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
+using KutnoAPI.Extensions;
 using KutnoAPI.Models;
+using KutnoAPI.Parsers;
 using MesInternalApi.Extensions;
+using Microsoft.AspNetCore.Mvc;
+using Npgsql;
 
 namespace KutnoAPI.Controllers
 {
@@ -25,9 +24,51 @@ namespace KutnoAPI.Controllers
 			_connectionString = configuration["DbString"];
 			_logger = logger;
 		}
+        [Route("SendBytes")]
+        [HttpPost]
+        public async Task<IActionResult> SendBytes()
+        {
+            try
+            {
+				string fileName = "C:\\Users\\ANI\\source\\repos\\HackYeah\\docs\\SIO 30.09.2022.xml";
+				byte[] fileBytes = System.IO.File.ReadAllBytes(fileName);
 
+                SchoolUploadRequest schoolUploadRequest = new()
+                {
+                    Year = 2022,
+                    SchoolsWorksheet = fileBytes,
+                    JobsWorksheet = fileBytes
+                };
+
+                HttpClient client = new()
+                {
+                    BaseAddress = new Uri("https://localhost:7218/")
+                };
+                var result = await APIService.CallApi(client, "Schools/Parse", HttpMethod.Post, schoolUploadRequest);
+                return Ok(result);
+			}
+			catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+        [Route("Parse")]
+        [HttpPost]
+        public async Task<IActionResult> Parse([FromBody] SchoolUploadRequest schoolUploadRequest)
+        {
+			try
+			{
+				SchoolParser schoolParser = new ();
+				var r = schoolParser.Parse(schoolUploadRequest);
+                return Ok(r);
+			}
+			catch (Exception ex)
+			{
+                return BadRequest(ex.Message);
+			}
+		}
 		[HttpGet(Name = "GetSchools")]
-        private async Task<ActionResult<IEnumerable<School>>> getMaterials(long UserId, string UserLang, SearchRequest searchRequest)
+        public async Task<ActionResult<IEnumerable<School>>> getMaterials(long UserId, string UserLang, SearchRequest searchRequest)
         {
 
             var query = string.Empty;
@@ -82,5 +123,8 @@ namespace KutnoAPI.Controllers
                 return Ok(result);
             }
     }
+
+
+
 	}
 }
