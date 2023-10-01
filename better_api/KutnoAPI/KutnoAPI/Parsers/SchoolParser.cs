@@ -17,15 +17,15 @@ public class SchoolParser
 
 		var schools = xMLParser.ParseXmlToDataTableSchools(sheetName, schoolUploadRequest.SchoolsWorksheet);
 
-		foreach (var school in schools)
-		{
-			foreach (var category in school.Categories)
-			{
-				//zaczytaj mnożnik
-				//określ pomnożoną wartość
-			}
-			//Dodaj wszystkie wartości do suma P dla całej szkoły
-		}
+		//foreach (var school in schools)
+		//{
+		//	foreach (var category in school.Categories)
+		//	{
+		//		//zaczytaj mnożnik
+		//		//określ pomnożoną wartość
+		//	}
+		//	//Dodaj wszystkie wartości do suma P dla całej szkoły
+		//}
 
 		//Oblicz sumę dla wszystkich szkół
 

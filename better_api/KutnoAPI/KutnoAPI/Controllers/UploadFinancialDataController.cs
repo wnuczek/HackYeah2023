@@ -6,6 +6,9 @@ using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using KutnoAPI.Models;
 using MesInternalApi.Extensions;
+using KutnoAPI.Extensions;
+using KutnoAPI.Parsers;
+using KutnoAPI.Services;
 
 namespace KutnoAPI.Controllers
 {
@@ -25,11 +28,53 @@ namespace KutnoAPI.Controllers
 			_connectionString = configuration["DbString"];
 			_logger = logger;
 		}
+		[Route("SendBytes")]
+		[HttpPost]
+		public async Task<IActionResult> SendBytes()
+		{
+			try
+			{
 
+				string fileNameIncomeSummary = Path.Combine("..", "..", "..", "docs", "Sprawozdania[2022][IVKwarta³] Dochody.xml");
+				byte[] fileBytesIncome = System.IO.File.ReadAllBytes(fileNameIncomeSummary);
+				string fileNameCostsSummary = Path.Combine("..", "..", "..", "docs", "Sprawozdania[2022][IVKwarta³] Wydatki.xml");
+				byte[] fileBytesCosts = System.IO.File.ReadAllBytes(fileNameCostsSummary);
+
+				FinancialSummaryUploadRequest financialUploadRequest = new()
+				{
+					Year = 2022,
+					IncomeSummary = fileBytesIncome,
+					CostsSummary = fileBytesCosts
+				};
+
+				HttpClient client = new()
+				{
+					BaseAddress = new Uri("https://localhost:7218/")
+				};
+				var result = await APIService.CallApi(client, "UploadFinancialData", HttpMethod.Post, financialUploadRequest);
+
+				return Ok(result);
+			}
+			catch (Exception ex)
+			{
+				return BadRequest(ex.Message);
+			}
+		}
 		[HttpPost(Name = "UploadFinancial")]
-        public async Task<ActionResult<bool>> Upload([FromBody] GeneralUploadRequest request)
+        public async Task<ActionResult<bool>> Upload([FromBody] FinancialSummaryUploadRequest request)
         {
-			return true;
+			try
+			{
+				FinancialStatementParser parser = new();
+				var incomes = parser.Parse(request.IncomeSummary, false);
+				var costs = parser.Parse(request.CostsSummary, true);
+
+				return Ok();
+			}
+			catch (Exception ex)
+			{
+				return BadRequest(ex.Message);
+			}
         }
 	}
 }
