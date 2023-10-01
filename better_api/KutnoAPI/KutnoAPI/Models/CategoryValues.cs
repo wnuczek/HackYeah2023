@@ -7,7 +7,7 @@ public class CategoryValues
     [JsonPropertyName("schoolrspo")]
     public long SchoolRSPO { get; set; }
     [JsonPropertyName("categoryid")]
-    public int CategoryId { get; set; }
+    public int Year { get; set; }
     public string CategoryStr { get; set; }
 
     [JsonPropertyName("value")]

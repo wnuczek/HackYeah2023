@@ -15,7 +15,7 @@ public class SchoolParser
 	{
 		string sheetName = "Szkoły i placówki";
 
-		var schools = xMLParser.ParseXmlToDataTable(sheetName, schoolUploadRequest.SchoolsWorksheet);
+		var schools = xMLParser.ParseXmlToDataTableSchools(sheetName, schoolUploadRequest.SchoolsWorksheet);
 
 		foreach (var school in schools)
 		{

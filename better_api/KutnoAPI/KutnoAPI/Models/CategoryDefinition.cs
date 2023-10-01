@@ -4,9 +4,6 @@ namespace KutnoAPI.Models;
 
 public class CategoryDefinition
 {
-    [JsonPropertyName("id")]
-    public int Id { get; set; }
-
     [JsonPropertyName("symbol")]
     public string Symbol { get; set; }
 

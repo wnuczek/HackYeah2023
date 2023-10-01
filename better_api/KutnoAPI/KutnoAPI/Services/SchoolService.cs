@@ -17,6 +17,12 @@ namespace KutnoAPI.Services
             " VALUES (@SchoolRSPO, @Year, @StudentsQuantity, @StudentsFromCountryQuantity, @StudentsFromSmallTownQuantity, @StudentsOutsideSchool)" +
             " ON CONFLICT (schoolrspo, year) DO UPDATE SET studentsquantity=EXCLUDED.studentsquantity, studentsfromcountryquantity=EXCLUDED.studentsfromcountryquantity, studentsfromsmalltownquantity=EXCLUDED.studentsfromsmalltownquantity, studentsoutsideschool=EXCLUDED.studentsoutsideschool";
 
+        private const string INSERT_CATEGORY_VALUES = "INSERT INTO pgj.category_values(schoolrspo, categorystr, year, value)" +
+            " VALUES (@SchoolRSPO, @CategoryStr, @Year, @Value)" +
+            " ON CONFLICT (schoolrspo, categorystr, year) DO UPDATE SET value=EXCLUDED.value";
+
+
+
         public bool InsertSchoolData(List<School> schools, NpgsqlConnection connection)
         {
             //using (var tx = connection.BeginTransaction())
@@ -25,6 +31,12 @@ namespace KutnoAPI.Services
             {
                 connection.Execute(INSERT_SCHOOL_HEADER, school);
                 connection.Execute(INSERT_SCHOOL_SUMMARY, school.Summary);
+                foreach(var c in school.Categories)
+                {
+                    c.Year = school.Summary.Year;
+                    connection.Execute(INSERT_CATEGORY_VALUES, c);
+
+                }
 
             }
             return true;

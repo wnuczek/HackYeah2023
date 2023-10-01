@@ -16,6 +16,11 @@
         {
             switch (value)
             {
+                case "Gmina": return OwnerType.COMMUNE;
+                case "Fundacje": return OwnerType.FOUNDATIONS;
+                case "Organizacje wynzaniowe": return OwnerType.RELIGION_ORGANISATION;
+                case "Osoba fizyczna": return OwnerType.PHYSICAL_PERSON;
+                case "Spółdzielnia": return OwnerType.COOPERATIVE;
                 default: return OwnerType.None;
             }
         }
