@@ -151,10 +151,10 @@ public class XMLParser
                 var rowDetails = row.Elements(ss + "Cell");
                 if (rowDetails.ElementAtOrDefault(9) is not null)
                 {
-                    j.SchoolRspo = Convert.ToInt32(GetString(rowDetails, 1));
-					j.NoPromotionGradedQuantity = Convert.ToDecimal(GetString(rowDetails, 11));
-					j.NominatedQuantity = Convert.ToDecimal(GetString(rowDetails,12));
-					j.PromotionGradedQuantity = Convert.ToDecimal(GetString(rowDetails, 14));
+                    j.SchoolRspo = Convert.ToInt32(GetString(rowDetails, 0));
+					j.NoPromotionGradedQuantity = Convert.ToDecimal(GetString(rowDetails, 10));
+					j.NominatedQuantity = Convert.ToDecimal(GetString(rowDetails,11));
+					j.PromotionGradedQuantity = Convert.ToDecimal(GetString(rowDetails, 12));
                 }
                 return j;
             })
