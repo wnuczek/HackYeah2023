@@ -31,7 +31,8 @@ namespace KutnoAPI.Controllers
         {
             try
             {
-				string fileName = "C:\\Users\\PGJ\\PycharmProjects\\HackYeah2023\\docs\\SIO 30.09.2022.xml";
+				//string fileName = "C:\\Users\\PGJ\\PycharmProjects\\HackYeah2023\\docs\\SIO 30.09.2022.xml";
+				string fileName = Path.Combine("..","..","..","docs", "SIO 30.09.2022.xml");
 				byte[] fileBytes = System.IO.File.ReadAllBytes(fileName);
 
                 SchoolUploadRequest schoolUploadRequest = new()
@@ -66,7 +67,7 @@ namespace KutnoAPI.Controllers
                 {
                     service.InsertSchoolData(r, connection);
                 }
-                return Ok();
+                return Ok(r);
 			}
 			catch (Exception ex)
 			{
