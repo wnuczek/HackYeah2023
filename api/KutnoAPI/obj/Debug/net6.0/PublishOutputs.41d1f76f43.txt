@@ -1,0 +1,13 @@
+C:\Users\PGJ\PycharmProjects\HackYeah2023\api\Published\KutnoAPI.exe
+C:\Users\PGJ\PycharmProjects\HackYeah2023\api\Published\appsettings.Development.json
+C:\Users\PGJ\PycharmProjects\HackYeah2023\api\Published\appsettings.json
+C:\Users\PGJ\PycharmProjects\HackYeah2023\api\Published\KutnoAPI.dll
+C:\Users\PGJ\PycharmProjects\HackYeah2023\api\Published\KutnoAPI.deps.json
+C:\Users\PGJ\PycharmProjects\HackYeah2023\api\Published\KutnoAPI.runtimeconfig.json
+C:\Users\PGJ\PycharmProjects\HackYeah2023\api\Published\KutnoAPI.pdb
+C:\Users\PGJ\PycharmProjects\HackYeah2023\api\Published\Dapper.dll
+C:\Users\PGJ\PycharmProjects\HackYeah2023\api\Published\Microsoft.OpenApi.dll
+C:\Users\PGJ\PycharmProjects\HackYeah2023\api\Published\Npgsql.dll
+C:\Users\PGJ\PycharmProjects\HackYeah2023\api\Published\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\PGJ\PycharmProjects\HackYeah2023\api\Published\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\PGJ\PycharmProjects\HackYeah2023\api\Published\Swashbuckle.AspNetCore.SwaggerUI.dll
