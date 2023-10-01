@@ -26,7 +26,7 @@ namespace KutnoAPI.Controllers
 			_logger = logger;
 		}
 
-		[HttpGet(Name = "Upload")]
+		[HttpGet(Name = "UploadSchools")]
         private async Task<ActionResult<bool>> Upload([FromBody] SchoolUploadRequest searchRequest)
         {
 			return true;

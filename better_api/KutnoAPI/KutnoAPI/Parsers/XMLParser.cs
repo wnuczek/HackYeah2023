@@ -4,6 +4,7 @@ using System.Globalization;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Xml.Linq;
+using System.Xml.XPath;
 
 namespace KutnoAPI.Parsers;
 
@@ -59,7 +60,7 @@ public class XMLParser
 				{
 					s.Rspo = Convert.ToInt32(GetString(rowDetails,0));
 					s.Regon = GetString(rowDetails, 9);
-					s.SchoolType = GetString(rowDetails, 10);
+					s.SchoolType = SchoolTypeParser.FromString(GetString(rowDetails, 10));
 					s.Name = GetString(rowDetails, 11);
 					s.Address = GetString(rowDetails, 20);
 					s.BuildingNumber = GetString(rowDetails, 21);
@@ -67,7 +68,8 @@ public class XMLParser
 					s.Town = GetString(rowDetails, 19);
 					s.PostCode = GetString(rowDetails, 23);
 					s.Post = GetString(rowDetails, 24);
-					s.Summary = new();
+					s.OwnerType = OwnerTypeParser.FromString(GetString(rowDetails, 26));
+                    s.Summary = new();
 
 					s.Summary.SchoolRSPO = s.Rspo;
 					var test2 = rowDetails.ElementAt(33);
