@@ -6,6 +6,8 @@ using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using KutnoAPI.Models;
 using MesInternalApi.Extensions;
+using KutnoAPI.Parsers;
+using KutnoAPI.Services;
 
 namespace KutnoAPI.Controllers
 {
@@ -14,9 +16,6 @@ namespace KutnoAPI.Controllers
 	public class UploadSchoolDataController : ControllerBase
 	{
 		private string _connectionString = string.Empty;
-		private string SCHOOLS_BASE_QUERY = "SELECT * FROM g.schools";
-
-        private const int RECORD_DEFAULT_LIMIT = 100;
 
         private readonly ILogger<UploadSchoolDataController> _logger;
 
@@ -26,10 +25,39 @@ namespace KutnoAPI.Controllers
 			_logger = logger;
 		}
 
-		[HttpGet(Name = "UploadSchools")]
-        private async Task<ActionResult<bool>> Upload([FromBody] SchoolUploadRequest searchRequest)
+		[HttpPost(Name = "UploadSchools")]
+        public async Task<ActionResult> Upload([FromBody] SchoolUploadRequest request)
         {
-			return true;
+            try
+            {
+                SchoolParser schoolParser = new();
+                JobParser jobParser = new();
+
+                var r = schoolParser.Parse(request);
+                var j = jobParser.Parse(request);
+                foreach (var jj in j)
+                {
+                    jj.Year = request.Year;
+                }
+                foreach (var s in r)
+                {
+                    s.Summary.Year = request.Year;
+                }
+                SchoolService service = new();
+                JobService jservice = new();
+
+                using (var connection = new NpgsqlConnection(_connectionString))
+                {
+                    service.InsertSchoolData(r, connection);
+                    jservice.InsertJobsData(j, connection);
+                }
+
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 	}
 }

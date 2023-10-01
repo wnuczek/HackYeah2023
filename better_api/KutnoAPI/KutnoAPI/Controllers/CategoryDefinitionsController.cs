@@ -12,59 +12,24 @@ namespace KutnoAPI.Controllers
 {
 	[ApiController]
 	[Route("[controller]")]
-	public class SchoolsController : ControllerBase
+	public class CategoryDefinitionsController : ControllerBase
 	{
 		private string _connectionString = string.Empty;
-		private string SCHOOLS_BASE_QUERY = "SELECT * FROM pgj.schools";
+		private string SCHOOLS_BASE_QUERY = "SELECT * FROM pgj.category_definitions";
 
         private const int RECORD_DEFAULT_LIMIT = 100;
 
-        private readonly ILogger<SchoolsController> _logger;
+        private readonly ILogger<CategoryDefinitionsController> _logger;
 
-		public SchoolsController(ILogger<SchoolsController> logger, IConfiguration configuration)
+		public CategoryDefinitionsController(ILogger<CategoryDefinitionsController> logger, IConfiguration configuration)
 		{
 			_connectionString = configuration["DbString"];
 			_logger = logger;
 		}
-        [Route("SendBytes")]
-        [HttpPost]
-        public async Task<IActionResult> SendBytes()
+
+        [HttpPost(Name = "GetCategoryDefinitions")]
+        public async Task<ActionResult<IEnumerable<CategoryDefinition>>> getValues(SearchRequest searchRequest)
         {
-            try
-            {
-				string fileName = "C:\\Users\\PGJ\\PycharmProjects\\HackYeah2023\\docs\\SIO 30.09.2022.xml";
-                string fileNameEtaty = "C:\\Users\\PGJ\\PycharmProjects\\HackYeah2023\\docs\\SIO etaty.xml";
-
-                byte[] fileBytes = System.IO.File.ReadAllBytes(fileName);
-                byte[] fileBytes_id = System.IO.File.ReadAllBytes(fileNameEtaty);
-
-
-
-                SchoolUploadRequest schoolUploadRequest = new()
-                {
-                    Year = 2022,
-                    SchoolsWorksheet = fileBytes,
-                    JobsWorksheet = fileBytes
-                };
-
-                HttpClient client = new()
-                {
-                    BaseAddress = new Uri("https://localhost:7218/")
-                };
-                var result = await APIService.CallApi(client, "UploadSchoolData", HttpMethod.Post, schoolUploadRequest);
-
-                return Ok(result);
-			}
-			catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-        }
-
-		[HttpPost(Name = "GetSchools")]
-        public async Task<ActionResult<IEnumerable<School>>> getSchools(SearchRequest searchRequest)
-        {
-
             var query = string.Empty;
             var paramDict = new Dictionary<string, object>();
             paramDict.Add("@limit", searchRequest.Limit > 0 ? searchRequest.Limit : RECORD_DEFAULT_LIMIT);
@@ -113,12 +78,20 @@ namespace KutnoAPI.Controllers
             using (var connection = new NpgsqlConnection(_connectionString))
             {
                 var parameters = new DynamicParameters(paramDict);
-                var result = await connection.QueryAsync<School>(query, parameters);
+                var result = await connection.QueryAsync<CategoryDefinition>(query, parameters);
                 return Ok(result);
             }
+        }
+
+        [HttpPost("update")]
+        public async Task<ActionResult<IEnumerable<CategoryDefinition>>> updateDefinitions(List<CategoryDefinition> defs)
+        {
+            using (var connection = new NpgsqlConnection(_connectionString))
+            {
+                CategoryDefinitionService service = new();
+                service.InsertDefinitionData(defs, connection);
+                return Ok();
+            }
+        }
     }
-
-
-
-	}
 }
