@@ -54,39 +54,37 @@ public class XMLParser
 			.Select(row =>
 			{
 				School s = new();
-				var value = row.Elements(ss + "Cell");
-				if (value.ElementAtOrDefault(9) is not null)
+				var rowDetails = row.Elements(ss + "Cell");
+				if (rowDetails.ElementAtOrDefault(9) is not null)
 				{
-					s.Rspo = Convert.ToInt32(value.ElementAtOrDefault(0).Value);
-					s.Regon = value.ElementAtOrDefault(9).Value.ToString().Trim();
-					s.SchoolType = value.ElementAtOrDefault(10).Value.ToString().Trim();
-					s.Name = value.ElementAtOrDefault(11).Value.ToString().Trim();
-					s.Address = value.ElementAtOrDefault(20).Value.ToString().Trim();
-					s.BuildingNumber = value.ElementAtOrDefault(21).Value.ToString().Trim();
-					s.FlatNumber = value.ElementAtOrDefault(22).Value.ToString().Trim();
-					s.Town = value.ElementAtOrDefault(19).Value.ToString().Trim();
-					s.PostCode = value.ElementAtOrDefault(23).Value.ToString().Trim();
-					s.Post = value.ElementAtOrDefault(24).Value.ToString().Trim();
+					s.Rspo = Convert.ToInt32(GetString(rowDetails,0));
+					s.Regon = GetString(rowDetails, 9);
+					s.SchoolType = GetString(rowDetails, 10);
+					s.Name = GetString(rowDetails, 11);
+					s.Address = GetString(rowDetails, 20);
+					s.BuildingNumber = GetString(rowDetails, 21);
+					s.FlatNumber = GetString(rowDetails, 22);
+					s.Town = GetString(rowDetails, 19);
+					s.PostCode = GetString(rowDetails, 23);
+					s.Post = GetString(rowDetails, 24);
 					s.Summary = new();
 
 					s.Summary.SchoolRSPO = s.Rspo;
-					var test2 = value.ElementAt(33);
-					CultureInfo culture = CultureInfo.InvariantCulture; 
+					var test2 = rowDetails.ElementAt(33);
+					
 
 
-					s.Summary.StudentsQuantity = decimal.Parse(value.ElementAtOrDefault(33).Value.ToString().Trim(), culture);
+					s.Summary.StudentsQuantity = GetDecimal(rowDetails, 33);
 
-					s.Summary.StudentsFromCountryQuantity = decimal.Parse(value.ElementAtOrDefault(34).Value.ToString().Trim(), culture);
-					s.Summary.StudentsFromSmallTownQuantity = decimal.Parse(value.ElementAtOrDefault(35).Value.ToString().Trim(), culture);
-					s.Summary.StudentsOutsideSchool = decimal.Parse(value.ElementAtOrDefault(36).Value.ToString().Trim(), culture);		
+					s.Summary.StudentsFromCountryQuantity = GetDecimal(rowDetails, 34);
+					s.Summary.StudentsFromSmallTownQuantity = GetDecimal(rowDetails, 35);
+					s.Summary.StudentsOutsideSchool = GetDecimal(rowDetails, 36);		
 					s.Categories = new ();
 
 					foreach(var index in categories.Keys)
 					{
 						CategoryValues cat = new();
-						var test = value.ElementAtOrDefault(index).Value.Trim();
-						bool isParsed = decimal.TryParse(test, out decimal parsedValue);
-						cat.Value =  isParsed ? parsedValue : 0;
+						cat.Value =  GetDecimal(rowDetails, index);
 						cat.SchoolRSPO = s.Rspo;
 						cat.CategoryStr = categories[index];
 						s.Categories.Add(cat);
@@ -102,17 +100,23 @@ public class XMLParser
 
 		return schools;
 	}
+	private string GetString(IEnumerable<XElement> elements, int index)
+	{
+		if (elements.ElementAtOrDefault(index) is null)
+			return string.Empty;
 
-	//static XmlNamespaceManager XmlNamespaceManager(XDocument xmlDoc, XNamespace ss, XNamespace excel, XNamespace html)
-	//{
-	//	XmlNamespaceManager nsManager = new XmlNamespaceManager(new NameTable());
+		return elements.ElementAt(index).Value.Trim();
+	}
+	private decimal GetDecimal(IEnumerable<XElement> elements, int index)
+	{
+		if (elements.ElementAtOrDefault(index) is null)
+			return 0;
 
-	//	nsManager.AddNamespace("ss", ss.NamespaceName);
-	//	nsManager.AddNamespace("excel", excel.NamespaceName);
-	//	nsManager.AddNamespace("html", html.NamespaceName);
+		CultureInfo culture = CultureInfo.InvariantCulture;
+		var isParsed = decimal.TryParse(GetString(elements, index), NumberStyles.Number, culture, out decimal output);
 
-	//	return nsManager;
-	//}
+		return isParsed ? output : 0;
+	}
 
 }
 
